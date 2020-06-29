@@ -4,15 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .boy {
+  float: left;
+}
+.girl {
+  width: 18rem;
+  height: 18rem;
+  float: right;
+}
+div {
+  text-align: center;
+}
+span {
+  position: relative;
+  z-index: 100;
+  font-size: 160px;
+  color: red;
+}
+.girl {
+  float: right;
+
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  transition: 10s easy-in;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  50% {
+    right: 34%;
+    top: 0px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.boy {
+  position: relative;
+  animation-name: bexample;
+  transition: 10s easy-in;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bexample {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 34%;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+span {
+  animation-name: iexample;
+  transition: 10s easy-in;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes iexample {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 500px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+    </style>
 </head>
 <body>
-    <h1>Hello bro</h1>
-    <h2>what are you doing now </h2>
-    <h3>where are you from ?</h3>
-    <section>
-        <h4>that is an section </h4>
-        <h5>that is an section item</h5>
-        <h6>that is an another</h6>
-    </section>
+<div> <img class="boy" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f2152051650689.58f5c1fc48242.gif" />
+  <span>❤️</span>
+  <img class="girl" src="https://thumbs.gfycat.com/DamagedKnobbyAmericancrayfish-size_restricted.gif" />
+</div>
 </body>
 </html>
